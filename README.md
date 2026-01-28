@@ -14,7 +14,7 @@ A premium “Coming Soon” landing page designed for **Chai Culture**, inspired
 - Framer Motion
 
 ## Live Demo
-(Will be added after deployment)
+https://chai-culture-comingsoon.netlify.app
 
 ## Note
-A clean placeholder logo is used, as the logo attachment was not visible in the assignment message.
+A clean placeholder logo is used, as no logo asset was accessible at the time of development.
