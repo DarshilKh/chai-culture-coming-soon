@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* ===== TAILWIND CSS V4 - ROYAL INDIAN HERITAGE THEME ===== */
+
+@theme {
+  /* Primary Brand Colors */
+  --color-royal-gold-light: #E8D5A3;
+  --color-royal-gold: #C9A227;
+  --color-royal-gold-dark: #9A7B1A;
+  
+  /* Chai Brown Palette */
+  --color-chai-brown-lightest: #8B7355;
+  --color-chai-brown-light: #5C3D2E;
+  --color-chai-brown: #3D2314;
+  --color-chai-brown-dark: #2A1810;
+  --color-chai-brown-darkest: #1A0F0A;
+  
+  /* Cream & Warm Whites */
+  --color-cream-light: #FFFDF9;
+  --color-cream: #F5F0E8;
+  --color-cream-dark: #E8E0D4;
+  --color-warm-white: #FDFCFA;
+  
+  /* Accent Colors */
+  --color-spice: #8B4513;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  /* Letter Spacing */
+  --tracking-royal: 0.2em;
+  --tracking-elegant: 0.08em;
+  --tracking-wide: 0.05em;
+}
+
+/* ===== BASE STYLES ===== */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-chai-brown);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: color-mix(in oklab, var(--color-royal-gold) 30%, transparent);
+  color: var(--color-chai-brown-dark);
+}
+
+/* ===== CUSTOM UTILITIES ===== */
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+/* Subtle grain texture - single layer, minimal */
+@utility texture-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-blend-mode: overlay;
+}
